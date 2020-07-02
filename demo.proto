@@ -1,5 +1,5 @@
 syntax = "proto3";
-package demo;
+package grpc_demo;
 
 message SearchRequest {
   string query = 1;
