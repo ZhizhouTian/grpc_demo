@@ -6,7 +6,7 @@ protoc \
 	-I=$GOPATH/src/ \
 	-I=$GOPATH/src/github.com/gogo/protobuf/ \
 	--proto_path=$GOPATH/src/github.com/ZhizhouTian/grpc_demo \
-	--gofast_out=\
+	--go_out=\
 Mgithub.com/kata-containers/agent/pkg/types/types.proto=github.com/kata-containers/agent/pkg/types,\
 Mgoogle/protobuf/any.proto=github.com/gogo/protobuf/types,\
 Mgoogle/protobuf/duration.proto=github.com/gogo/protobuf/types,\
