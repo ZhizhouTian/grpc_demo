@@ -16,6 +16,15 @@ message SearchResponse {
   repeated Result results = 1;
 }
 
+message ListRequest {
+  int32 result_per_page = 1;
+}
+
+message ListResponse {
+  repeated Result results = 1;
+}
+
 service SearchService {
   rpc Search (SearchRequest) returns (SearchResponse);
+  rpc List (ListRequest) returns (ListResponse);
 }

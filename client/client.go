@@ -46,5 +46,10 @@ func main() {
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}
-	log.Printf("Greeting: %s", r.GetResults())
+	log.Printf("Search: %s", r.GetResults())
+	resp, err := c.List(ctx, &pb.ListRequest{})
+	if err != nil {
+		log.Fatalf("could not greet: %v", err)
+	}
+	log.Printf("List: %s", resp.GetResults())
 }
